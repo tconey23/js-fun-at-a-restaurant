@@ -24,7 +24,7 @@ function addIngredients(item, array){
 
 if (array.includes(item)){
 
-
+    return
 
 }else{
   array.push(item)
@@ -35,7 +35,7 @@ if (array.includes(item)){
 
 function formatPrice(initialPrice){
 
-  var initialPrice = "$" + initialPrice
+  var initialPrice = `$${initialPrice}`
 
 return initialPrice
 

@@ -19,10 +19,11 @@ function refundOrder(refOrder,deliveryOrders){
 
   for (var i =0; i < deliveryOrders.length; i++){
   
-    if(deliveryOrders[i].orderNumber != refOrder){
-    }else{
+    if(deliveryOrders[i].orderNumber === refOrder){
+
       deliveryOrders.splice(i,1)
-    } 
+
+    }
   }
 }
 
@@ -35,6 +36,7 @@ function listItems(deliveryOrders){
 
 
   }
+  
   return outputList.replace(/,(\s+)?$/, '').trim()
 }
 
